@@ -22,6 +22,7 @@ public class GoogleTest extends BaseTest {
 
     @Test
     void newTest() {
+        System.out.println("Sample message");
         Assert.assertTrue(5 < 6);
     }
 }
