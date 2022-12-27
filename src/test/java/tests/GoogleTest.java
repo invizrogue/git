@@ -22,7 +22,6 @@ public class GoogleTest extends BaseTest {
 
     @Test
     void newTest() {
-        int i = 5;
-        Assert.assertTrue(i > 2, "Assertion error!");
+        Assert.assertTrue(5 < 6);
     }
 }
