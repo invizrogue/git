@@ -1,6 +1,7 @@
 package tests;
 
 import base.BaseTest;
+import org.testng.Assert;
 import pages.GooglePage;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -17,5 +18,10 @@ public class GoogleTest extends BaseTest {
         // сравниваем ожидаемый и фактический результат
         googlePage.checkFirstLinkMustMatch(EXPECTED_RESULT);
         int i = 0; // точка останова для дебага
+    }
+
+    @Test
+    void newTest() {
+        Assert.assertTrue(5 < 6);
     }
 }
