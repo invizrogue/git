@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="goooooogle">
+    <parameter name="BASE_URL" value="https://google.com"/>
+    <test name="Selenide first at search result">
+        <parameter name="SEARCH_STRING" value="selenide"/>
+        <parameter name="EXPECTED_RESULT" value="selenide.org"></parameter>
+        <classes>
+            <class name="tests.GoogleTest"/>
+        </classes>
+    </test>
+</suite>
